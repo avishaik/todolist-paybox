@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "tsc -p ./",
+    "start": "nodemon  out/src/index.js",
     "watch-ts": "tsc -w",
     "watch-node": "nodemon --nolazy --debug-brk=9229 ./out/src/index.js",
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript, Node\" -c \"yello.bold, cyan.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
@@ -19,6 +20,7 @@
     "axios": "^1.4.0",
     "concurrently": "^8.2.0",
     "express": "^4.18.2",
+    "nodemon": "^3.0.1",
     "typescript": "^5.1.6"
   }
 }
