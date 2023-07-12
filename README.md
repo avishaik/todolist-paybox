@@ -40,4 +40,4 @@ The todo list server is implemented in `backend-todolist`, it's easy to add more
 The notification server is implemented in `notification-service` folder.
 It is a general purpose notification server, and we can easily implement notification for anotrher microservices needs
 
-* Please ignore the `frontend-todolist`, I wanted to implemented a page using vue.js, but did not have the time.
+* Please ignore the `frontend-todolist`, I wanted to implement a page using vue.js, but did not have the time.
