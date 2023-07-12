@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Node server",
+            "name": "Launch Todo server",
             "skipFiles": [
                 "<node_internals>/**"
             ],
@@ -17,6 +17,21 @@
             "program": "${workspaceFolder}\\backend-todolist\\src\\index.ts",
             "outFiles": [
                 "${workspaceFolder}/backend-todolist/out/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Notification server",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "preLaunchTask": "watch-task",
+            "runtimeExecutable": "nodemon",
+            "cwd": "${fileDirname}",
+            "program": "${workspaceFolder}\\notofication-service\\src\\index.ts",
+            "outFiles": [
+                "${workspaceFolder}/notofication-service/out/**/*.js"
             ]
         },
     ]
